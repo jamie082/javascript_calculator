@@ -15,14 +15,19 @@ function subtract() {
 
 function multiply() {
     var firstNumber = parseFloat(document.getElementById("firstNumber").value);
-    var secondNumber = parseFloat(doccument.getElementById("secondNumber").value);
+    var secondNumber = parseFloat(document.getElementById("secondNumber").value);
     var result = firstNumber * secondNumber;
     document.getElementById("result").innerHTML = result;
 }
 
 function divide() {
-    var firstNumber = parseFloat(document.getElementById("firstnumber").value);
+    var firstNumber = parseFloat(document.getElementById("firstNumber").value);
     var secondNumber = parseFloat(document.getElementById("secondNumber").value);
     var result = firstNumber / secondNumber;
     document.getElementById("result").innerHTML = result;
+}
+
+function ClearFields() {
+    document.getElementById("firstNumber").value = "";
+    document.getElementById("secondNumber").value = "";
 }
